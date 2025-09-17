@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "4.7.0",
-    "@fingerprintjs/fingerprintjs": "^3.3.5",
+    "@fingerprintjs/fingerprintjs": "^4.6.2",
     "@reduxjs/toolkit": "1.9.1",
     "@sentry/integrations": "^7.64.0",
     "@sentry/react": "^7.64.0",
