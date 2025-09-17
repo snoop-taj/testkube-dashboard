@@ -38,7 +38,7 @@
     "@types/react-helmet": "^6.1.5",
     "@types/react-syntax-highlighter": "^15.5.5",
     "@types/react-transition-group": "4.4.4",
-    "@types/semver": "^7.5.0",
+    "@types/semver": "^7.7.1",
     "@types/styled-components": "5.1.18",
     "babel-plugin-styled-components": "^2.1.4",
     "file-loader": "6.2.0",
@@ -81,7 +81,7 @@
     "react-use": "17.4.0",
     "react-use-websocket": "^4.2.0",
     "reactflow": "^11.7.4",
-    "semver": "^7.5.4",
+    "semver": "^7.7.2",
     "strip-ansi": "^6.0.1",
     "styled-components": "5.3.5",
     "zustand": "^4.4.1"
