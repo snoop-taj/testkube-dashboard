@@ -1,0 +1,39 @@
+import {Input} from 'antd';
+
+import {FormItem, FormItemLabel} from '@custom-antd';
+
+import {required, url} from '@utils/form';
+
+import {TooltipStatus, getValidationTooltip} from './tooltipUtils';
+
+type RepositoryProps = {
+  status?: TooltipStatus;
+  message?: string;
+};
+
+const Repository: React.FC<RepositoryProps> = props => {
+  const {status = TooltipStatus.None, message} = props;
+
+  return (
+    <FormItem
+      name="uri"
+      key="uri"
+      label={
+        <FormItemLabel
+          text="Git repository URI"
+          tooltipMessage="We do currently only support checking out repositories via https"
+          required
+          status={status}
+        />
+      }
+      rules={[required, url]}
+      tooltip={getValidationTooltip(status, message)}
+      // required mark is shown in custom label component
+      required={false}
+    >
+      <Input placeholder="e.g.: https://github.com/myCompany/myRepo.git" />
+    </FormItem>
+  );
+};
+
+export default Repository;
